@@ -1,0 +1,7 @@
+- name: basic server setup
+  hosts: local  
+  become: true #optional: if your tasks need root access
+  tasks:
+    - name: example task
+      debug:
+        msg: "hello,this is a basic setup"
